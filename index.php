@@ -27,7 +27,10 @@ $risultato = str_replace($p, '***', $testoMinimo);
         <title></title>
     </head>
     <body>
-        <p> Questo è il paragrafo censurato : <?php echo $risultato; ?></p>
-
+        <h1>Questo è il paragrafo censurato: </h1>
+        <!-- Stampo a schermo il testo censurato all'interno di un paragrafo. -->
+        <p><?php echo $risultato; ?></p>
+        <!-- Stampo a schermo la lunghezza del paragrafo di testo censurato. -->
+        <p>Questa è la lunghezza del paragrafo soprastante: <?php echo strlen($risultato); ?> </p>
     </body>
 </html>
